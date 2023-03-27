@@ -18,8 +18,8 @@ function IndexPage(props) {
 export async function getStaticProps() {
   try {
     const [userRes, balRes] = await Promise.all([
-      fetch(`${process.env.VERCEL_URL}/api/user`),
-      fetch(`${process.env.VERCEL_URL}/api/getbalance`),
+      fetch(`${process.env.PROTO}${process.env.VERCEL_URL}/api/user`),
+      fetch(`${process.env.PROTO}${process.env.VERCEL_URL}/api/getbalance`),
     ]);
     const [userData, balanceDetails] = await Promise.all([userRes.json(), balRes.json()]);
     return {props: { data: userData, balanceDetails }};

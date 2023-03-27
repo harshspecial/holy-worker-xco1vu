@@ -2,7 +2,7 @@
   "name": "nextjs-saasblocks-starter",
   "private": true,
   "scripts": {
-    "dev": "VERCEL_URL=http://localhost:3000 next dev",
+    "dev": "VERCEL_URL=localhost:3000 PROTO=http:// next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
