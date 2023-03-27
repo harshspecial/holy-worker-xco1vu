@@ -6,7 +6,7 @@ export default function List({ item, showCheveron, lightMode }) {
   return (
     <li className='snap-start'>
       <a
-        href='/'
+        href='#'
         className={`${
           lightMode ? 'hover:bg-neutral-100 focus:bg-neutral-100' : 'hover:bg-white focus:bg-white'
         } f-10 flex w-full items-center overflow-hidden rounded-lg py-2 pl-2 pr-3 text-left font-bold hover:shadow`}

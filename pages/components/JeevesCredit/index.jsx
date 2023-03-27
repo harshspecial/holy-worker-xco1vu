@@ -57,7 +57,7 @@ export default function JeevesCredit({
               <RefreshCcw className='mr-1' size={10} />
               <span>AutoPay Mar 13</span>
             </div>
-            <a href='/' className='text-[10px] text-neutral-600 underline'>
+            <a href='#' className='text-[10px] text-neutral-600 underline'>
               View your statement
             </a>
           </div>

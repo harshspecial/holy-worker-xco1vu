@@ -10,7 +10,7 @@ export default function Treasury({ balanceDetails }) {
       <Card>
         <div className='flex justify-between'>
           <p className='text-xs font-semibold uppercase tracking-tighter'>Available Balance</p>
-          <a href='/' className='mr-4 flex items-center text-xs font-semibold text-violet-500'>
+          <a href='#' className='mr-4 flex items-center text-xs font-semibold text-violet-500'>
             Manage your accounts <ArrowRight size={10} className='ml-2' />
           </a>
         </div>

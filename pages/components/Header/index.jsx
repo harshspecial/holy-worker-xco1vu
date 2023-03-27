@@ -14,7 +14,7 @@ export default function Header({ menuItems, userDetails }) {
               item.selected ? 'font-bold text-black' : 'font-medium'
             }`}
           >
-            <a href='/'>{item.label}</a>
+            <a href='#'>{item.label}</a>
           </li>
         ))}
       </ul>
