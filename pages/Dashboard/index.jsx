@@ -38,10 +38,10 @@ export default function Dashboard({ data, balanceDetails }) {
           <Card bgClass='bg-zinc-800' widthClass='w-64'>
             <div className='flex flex-col'>
               <div className='mr-3 h-10 w-10 overflow-hidden rounded-full bg-neutral-300' />
-              <a href='/' className='mb-1 mt-4 text-[10px] font-semibold text-gray-200'>
+              <a href='#' className='mb-1 mt-4 text-[10px] font-semibold text-gray-200'>
                 Connect your ERP to Jeeves
               </a>
-              <a href='/' className='text-[8px] text-gray-200'>
+              <a href='#' className='text-[8px] text-gray-200'>
                 find out more
               </a>
             </div>
