@@ -2,7 +2,7 @@
   "name": "nextjs-saasblocks-starter",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "HOST=http://localhost:3000 next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",

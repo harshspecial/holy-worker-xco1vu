@@ -18,8 +18,8 @@ export default function IndexPage(props) {
 IndexPage.getInitialProps = async (ctx) => {
   try {
     const [userRes, balRes] = await Promise.all([
-      fetch('http://localhost:3000/api/user'),
-      fetch('http://localhost:3000/api/getbalance'),
+      fetch(`${process.env.HOST}/api/user`),
+      fetch(`${process.env.HOST}/api/getbalance`),
     ]);
     const [userData, balanceDetails] = await Promise.all([userRes.json(), balRes.json()]);
     return { data: userData, balanceDetails };
