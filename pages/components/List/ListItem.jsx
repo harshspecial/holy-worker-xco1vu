@@ -20,7 +20,7 @@ export default function List({ item, showCheveron, lightMode }) {
           <p className='mb-1 text-[10px] text-black'>{label}</p>
           <p className='text-[8px] text-gray-400'>{subtitle}</p>
         </div>
-        {warning && <div className='flex items-center m-auto text-amber-500 text-[10px] font-medium rounded-xl bg-orange-50 px-3 py-1'><AlertTriangle size={10} color='rgb(245 158 11)' className='mr-2' /> {warning}</div>}
+        {warning && <div className='flex items-center m-auto text-amber-600 text-[10px] font-medium rounded-xl bg-orange-50 px-3 py-1'><AlertTriangle size={10} color='rgb(245 158 11)' className='mr-2' /> {warning}</div>}
         {showCheveron && <ChevronRight className='ml-auto' color='black' size={16} />}
       </a>
     </li>
