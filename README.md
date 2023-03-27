@@ -1,5 +1,7 @@
 This is a minimal Next.js app to demonstrate the Front End UI development capability for the given assignment.
 
+DEMO URL: https://harsh-dashboard-test.vercel.app
+
 ## Things Covered
 
 * Dashboard has been developed using Next jS / React JS
