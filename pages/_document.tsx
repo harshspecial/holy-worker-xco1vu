@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
             @import url('https://fonts.cdnfonts.com/css/montserrat');
           </style>
         </Head>
-        <body className="antialiased">
+        <body className="antialiased overflow-x-auto">
           <Main />
           <NextScript />
         </body>

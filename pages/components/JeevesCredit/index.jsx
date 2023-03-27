@@ -16,7 +16,7 @@ export default function JeevesCredit({balanceDetails = {
                         <p className="uppercase text-xs font-semibold tracking-tighter">current balance</p>
                         <div className="flex items-center">
                             <p className="text-black text-xl font-semibold mt-2">$800,000.00</p>
-                            <span className="inline-block p-0.5 px-1 py-1 rounded-md text-xs text-black bg-neutral-200 font-bold ml-3">MXN</span>
+                            <span className="inline-block p-0.5 px-1 py-1 rounded-md text-xs text-black bg-neutral-200 font-bold ml-3 mt-2">MXN</span>
                             <p className="text-[10px] font-semibold ml-auto"><i>of</i> $1,000,000.00</p>
                         </div>
                         <div className="flex mt-2">

@@ -7,7 +7,7 @@ export default function IndexPage(props) {
     return <ErrorPage />
   }
   return (
-    <div className="px-6 max-w-screen-2xl mx-auto">
+    <div className="px-6 max-w-screen-2xl mx-auto min-w-[64rem]">
       <Header menuItems={props.data?.menuItems} userDetails={props.data?.userDetails} />
       <Dashboard data={props.data} balanceDetails={props.balanceDetails}/>
       <footer className="h-28"/>
