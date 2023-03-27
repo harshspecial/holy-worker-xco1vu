@@ -9,7 +9,8 @@ This is a minimal Next.js app to demonstrate the Front End UI development capabi
 * User api is added to fetch the mocked data which is populated in the app.
 * AirWallex api is also integrated to fetch the country wise balances.
 * Contry cards become scrollable if there are more cards and it snaps as per the card start.
-* All the components are custom made as per the design
+* All the components are custom made as per the design.
+* Tailwind CSS has been used to avoid using custom CSS for components which increases bundle size. Tailwind only includes those classes in the build which are used in the app.
 * Header is sticky to the top.
 
 ## Things NOT Covered
