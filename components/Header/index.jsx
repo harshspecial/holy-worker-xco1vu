@@ -3,6 +3,9 @@ import Dropdown from '../Dropdown';
 import { Bell, Settings } from 'react-feather';
 
 export default function Header({ menuItems, userDetails }) {
+  if(!menuItems || !userDetails) {
+    return <></>;
+  }
   const { name, tier } = userDetails;
   return (
     <header className='sticky top-0 flex h-24 w-full items-center justify-between bg-white px-6'>

@@ -1,13 +1,13 @@
 import dynamic from 'next/dynamic';
-import Treasury from '../components/Treasury';
-import JeevesCredit from '../components/JeevesCredit';
-import MyCards from '../components/MyCards';
-import MyEmployees from '../components/MyEmployees';
-import List from '../components/List';
-import Card from '../components/Card';
+import Treasury from '../Treasury';
+import JeevesCredit from '../JeevesCredit';
+import MyCards from '../MyCards';
+import MyEmployees from '../MyEmployees';
+import List from '../List';
+import Card from '../Card';
 
 // dynamically importing greeting because Date() gives different result on SSR and there may be hydration issues
-const GreetingText = dynamic(() => import('../components/Greeting'), { ssr: false });
+const GreetingText = dynamic(() => import('../Greeting'), { ssr: false });
 
 export default function Dashboard({ data, balanceDetails }) {
   const { userDetails, greeting, sideMenuItems, myEmployees } = data;

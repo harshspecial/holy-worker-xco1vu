@@ -1,9 +1,9 @@
-import Header from './components/Header';
-import Dashboard from './Dashboard';
-import ErrorPage from './ErrorPage';
+import Header from '../components/Header';
+import Dashboard from '../components/Dashboard';
+import ErrorPage from '../components/ErrorPage';
 
-export default function IndexPage(props) {
-  if (!props?.data) {
+function IndexPage(props) {
+  if (!props?.data || !props?.balanceDetails) {
     return <ErrorPage />;
   }
   return (
@@ -15,16 +15,32 @@ export default function IndexPage(props) {
   );
 }
 
-IndexPage.getInitialProps = async (ctx) => {
+// IndexPage.getInitialProps = async (ctx) => {
+//   try {
+//     const [userRes, balRes] = await Promise.all([
+//       fetch(`${process.env.HOST}/api/user`),
+//       fetch(`${process.env.HOST}/api/getbalance`),
+//     ]);
+//     const [userData, balanceDetails] = await Promise.all([userRes.json(), balRes.json()]);
+//     return { data: userData, balanceDetails };
+//   } catch (e) {
+//     console.log(e);
+//     return {};
+//   }
+// };
+
+export async function getStaticProps() {
   try {
     const [userRes, balRes] = await Promise.all([
       fetch(`${process.env.HOST}/api/user`),
       fetch(`${process.env.HOST}/api/getbalance`),
     ]);
     const [userData, balanceDetails] = await Promise.all([userRes.json(), balRes.json()]);
-    return { data: userData, balanceDetails };
+    return {props: { data: userData, balanceDetails }};
   } catch (e) {
     console.log(e);
-    return {};
+    return {props: {}};
   }
-};
+}
+
+export default IndexPage;
